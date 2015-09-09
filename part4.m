@@ -4,6 +4,10 @@ nfile = 'C:\Users\Steven\Documents\School Stuff\College\JUNIOR FALL 15\Computati
 % sub20 = 'D:\Users\Richard\Documents\s00020-2567-03-30-17-47_ABP.txt';
 % nfile = 'D:\Users\Richard\Documents\s00020-2567-03-30-17-47n.txt';
 
+addpath('C:\Users\Steven\Documents\MATLAB\School Stuff\Computational Medicine\PhysioToolkitCardiacOutput_MatlabCode\2analyze');
+addpath('C:\Users\Steven\Documents\MATLAB\School Stuff\Computational Medicine\PhysioToolkitCardiacOutput_MatlabCode\3estimate');
+addpath('C:\Users\Steven\Documents\MATLAB\School Stuff\Computational Medicine');
+
 % Produce estimates without calibration
 abpfile = importdata(sub20);
 abp = abpfile(:,2);
@@ -35,4 +39,3 @@ C2ratio = COdouble(firstind)/estimates(n-1);
 
 % Performing calibration calculations and plotting
 estimates = estimates*C2ratio;
-
