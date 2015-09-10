@@ -50,10 +50,10 @@ while abs(timemin(n) - 720) < min
 end
 
 figure
-ax1 = subplot(4,1,1);
-ax2 = subplot(4,1,2);
-ax3 = subplot(4,1,3);
-ax4 = subplot(4,1,4);
+ax1 = subplot(2,1,1);
+ax2 = subplot(2,1,2);
+ax3 = subplot(2,1,3);
+ax4 = subplot(2,1,4);
 plot(ax1,timemin(1:n), estimates(1:n));
 
 xlabel(ax1,'time (min)')
@@ -61,20 +61,17 @@ ylabel(ax1,'Cardiac Output (L/min)')
 
 plot(ax2,timemin(1:n), PP(1:n));
 
-xlabel(ax2,'time (min)')
-ylabel(ax2,'PP (mmHg)')
+xlabel(ax1,'time (min)')
+ylabel(ax1,'Cardiac Output (L/min)')
 
 plot(ax3,timemin(1:n), MAP(1:n));
-
-xlabel(ax3,'time (min)')
-ylabel(ax3,'Mean Arterial Pressure (mmHg)')
+title(ax1,'Continuous Estimated Cardiac Output (Calibrated)')
+xlabel(ax1,'time (min)')
+ylabel(ax1,'Cardiac Output (L/min)')
 
 plot(ax4,timemin(1:n), HR(1:n));
-axis(ax1,[0 720 2 7])
-axis(ax2,[0 720 20 120])
-axis(ax3,[0 720 40 100])
-axis(ax4,[0 720 50 100])
-xlabel(ax4,'time (min)')
-ylabel(ax4,'Heart Rate (bpm)')
+title(ax1,'Continuous Estimated Cardiac Output (Calibrated)')
+xlabel(ax1,'time (min)')
+ylabel(ax1,'Cardiac Output (L/min)')
 
 
