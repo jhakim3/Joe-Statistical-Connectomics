@@ -13,7 +13,7 @@ estimate6 = estimateCO_v3(otimes, feat, beatq, 6, 100);
 estimate7 = estimateCO_v3(otimes, feat, beatq, 7, 100);
 estimates = [estimate5, estimate6, estimate7]; %estimates(data index)(estimator index)
 
-% Calibrate estimate5 against CO from thermodilution
+% Calibrate estimate against CO from thermodilution
 ntable = readtable(patientn, 'Delimiter', 'tab');
 COdouble = str2double(table2cell(ntable(2:end,16)));
 
