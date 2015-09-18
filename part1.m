@@ -2,7 +2,6 @@ function [COVals, CVals] = part1(patientnums,index,abp,feat,otimes,ntable)
 
 Tn = feat(:,7);
 MAP = feat(:,6);
-% PP = 2*(MAP-feat(:,5));
 PP = feat(:,5);
 
 delP = zeros(length(feat),1);
@@ -67,7 +66,6 @@ for i = 1:length(tau_window)
             COtdMAPvector(n,7) = otimes(((win-1)/2)+i,2); %beat number
             n = n+1;
         end
-
     end
 end
 
@@ -127,7 +125,7 @@ axis(ax3,[0 720 40 120]);
 hold off;
 
 % Plotting Liljestrand
-[estimate5,min] = estimateCO_v3(otimes, feat, beatq, 5, 100);
+[estimate5,min] = estimateCO_v3(otimes, feat, beatq, 5, 1);
 estimate5 = estimate5*COtdMAPvector(1,2)./estimate5(find(min>COtdMAPvector(1,1),1));
 figure;
 suptitle(sprintf('Patient %d Liljestrand Estimator',patientnums(index)));
