@@ -5,6 +5,7 @@ Question
 We will consider, using cluster silhouetting, whether the distribution of the amount of clusters is more inherent to the species or the individuals. We will use the rats given, because there are three graphs available created using similar techniques.
 
 >H0: The mean of the silhouette distributions between the individuals is not significantly different
+>
 Ha: The mean of the silhouette distributions between the individuals is significantly different
 
 We will evaluate the difference in the silhouette profiles by calculating the RMSE between each curve, as well as comparing the means and standard deviations. We can acquire the latter by performing the clustering over several trials, giving us a distribution of optimal clusters as well as values for each cluster.
