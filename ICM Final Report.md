@@ -58,13 +58,16 @@ Place each cluster in a separate array and place all arrays into Clustercell
 We will use the three rat graphs given in the Brain Architecture Management System Rat Connectome Project. This data set is the best available for comparing individuals from a population of individuals and compare properties between them.
 
 Model
+
 We will be modeling the different graphs as Stochastic Block Model random graphs. In order to do this, given the fact that the rat brains are weighted random graphs, we would need to apply some thresholding to make each edge’s connection binary instead of an integer. Hypothetically, this is not optimal for biological data such as brain connectomes, as other non-bernoulli type connection schemes generally are better models (scale-free networks, etc.) However, we chose to use SBMs for simplicity.
 
 
 **Results:**
-   ![](http://i.imgur.com/FOEPDx6.jpg)
+
+	![](http://i.imgur.com/FOEPDx6.jpg)
 	![](http://i.imgur.com/JFu1FIh.jpg)	
 	![](http://i.imgur.com/w9TrBvd.jpg)
+
 Rats 1,2,3: Significance levels for difference in block sizes. Since no size (1-5) is consistently the best fit for each rat, there is no overlap and therefore we cannot conclude that the rats are of similar associativity. For instance, rat #1 had H0 cluster size of 2 and significantly not 3, 4, or 5 (using the figure, and disregarding cluster size 1), however this was not observed for rats #2 or #3, (with rats #2 and #3, Ha also worked) etc. 
 
 
