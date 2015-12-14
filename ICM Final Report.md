@@ -3,6 +3,7 @@
 Joe and the Joes
 
 **Abstract:**
+
 In this report, we will pose the question of whether the three rat brains in the Brain Architecture Management System Rat Connectome Project database are similar enough in terms of associativity to be described as similar brains. To do this, we intend to iterate through different cluster-sized stochastic block models (SBM), and at each step, determine if any of the three graphs are sampled from that sized SBM. If the three graphs all conform to the same set of SBMs, we will conclude that they are of similar associativity.
 
 **Question:**
@@ -64,9 +65,9 @@ We will be modeling the different graphs as Stochastic Block Model random graphs
 
 **Results:**
 
-	![](http://i.imgur.com/FOEPDx6.jpg)
-	![](http://i.imgur.com/JFu1FIh.jpg)	
-	![](http://i.imgur.com/w9TrBvd.jpg)
+![](http://i.imgur.com/FOEPDx6.jpg)
+![](http://i.imgur.com/JFu1FIh.jpg)	
+![](http://i.imgur.com/w9TrBvd.jpg)
 
 Rats 1,2,3: Significance levels for difference in block sizes. Since no size (1-5) is consistently the best fit for each rat, there is no overlap and therefore we cannot conclude that the rats are of similar associativity. For instance, rat #1 had H0 cluster size of 2 and significantly not 3, 4, or 5 (using the figure, and disregarding cluster size 1), however this was not observed for rats #2 or #3, (with rats #2 and #3, Ha also worked) etc. 
 
