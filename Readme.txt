@@ -1,0 +1,1 @@
+Run the ICM.m file, given the whole repo, it should have the rat (1).mat file in the same directory.
